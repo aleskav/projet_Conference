@@ -1,0 +1,410 @@
+/* Resetting default margins, paddings, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Header styles */
+.contain-header {
+  background-color: rgb(34, 63, 83);
+  height: 12vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.contain-header ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.header-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-navigation a:hover {
+  color: #f1c40f;
+}
+
+.header-navigation a:active {
+  background-color: #f1c40f;
+  color: #333;
+}
+
+header h1 {
+  font-weight: 300;
+  font-size: 38px;
+  color: rgb(173, 188, 201);
+  letter-spacing: 3px;
+  margin: 12px 0 0 250px;
+}
+
+header #space {
+  letter-spacing: 5px;
+}
+
+.bloc-nav h3 {
+  padding: 14px 0 16px 195px;
+  color: rgb(62, 106, 108);
+  font-size: 18px;
+}
+
+.bloc-nav ul {
+  line-height: 0;
+  padding: 10px 190px 0 0;
+  font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    margin: 12px;
+  }
+
+  .contain-header {
+    flex-direction: column;
+  }
+
+  .header-navigation a {
+    color: black;
+  }
+
+  .header-navigation ul {
+    flex-wrap: wrap;
+  }
+
+  .media-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-navigation ul {
+    flex-direction: column;
+  }
+
+  .header-navigation a {
+    color: black;
+  }
+
+  .main-header ul {
+    flex-direction: column;
+  }
+}
+
+/* Subheader */
+.hautAccueil {
+  background-color: rgb(34, 63, 83);
+  height: 300px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.hautAccueil h2 {
+  color: rgb(62, 106, 108);
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.hautAccueil p {
+  color: rgb(173, 188, 201);
+  padding: 10px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 20px;
+}
+
+.hautAccueil a {
+  text-decoration: none;
+  color: white;
+}
+
+.hautAccueil button {
+  font-size: 12px;
+  margin-top: 20px;
+  background-color: rgb(34, 63, 83);
+  height: 45px;
+  width: 240px;
+  border: 0.5px solid white;
+  border-radius: 5px;
+}
+
+.hautAccueil button:hover {
+  background-color: rgb(73, 138, 174);
+}
+
+/* Cards section */
+.cards {
+  background-color: white;
+  margin: 10vh 5vw 0 5vw;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.media-card {
+  width: 340px;
+  overflow: hidden;
+}
+
+.media-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2%;
+  margin: 20px 0;
+}
+
+.media-card a {
+  text-decoration: none;
+  color: teal;
+}
+
+.media-card h5 {
+  color: rgb(173, 188, 201);
+  font-size: 16px;
+}
+
+.media-card h3 {
+  color: rgb(173, 188, 201);
+  font-size: 20px;
+}
+
+.text-card {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Gradient section */
+#minhaDiv {
+  background: linear-gradient(to right, #398235 0%, #8ab66b 0%, #d4ddbc 100%);
+  height: 230px;
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.sub-h {
+  color: rgb(62, 106, 108);
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.sub-p {
+  color: rgb(98, 109, 118);
+  padding: 10px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 20px;
+}
+
+/* Speakers section */
+#presentation {
+  border-spacing: 30px;
+  margin: 40px;
+}
+
+table a {
+  text-decoration: none;
+  color: rgb(19, 187, 165);
+}
+
+#presentation h3 {
+  color: rgb(26, 163, 170);
+  line-height: 1;
+}
+
+.ensemble {
+  text-align: center;
+  margin: 40px;
+}
+
+#presentation h4 {
+  color: rgb(98, 109, 118);
+  line-height: 0;
+  font-size: 14px;
+}
+
+.box-text {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 300px;
+  border: 1px solid rgb(209, 197, 197);
+  border-radius: 5px;
+  position: relative;
+}
+
+.box-text p {
+  font-size: 18px;
+  color: rgb(142, 182, 184);
+  padding-top: 80px;
+}
+
+.box-image {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  object-fit: cover;
+  transform: translate(110%, -160%);
+}
+
+/* Program section */
+.program-table {
+  margin: 0 50px 0 30px;
+}
+
+.program-table th {
+  color: rgb(62, 106, 108);
+  height: 90px;
+  text-align: right;
+  font-size: 28px;
+  padding-right: 25px;
+}
+
+.program-table td:not(.horaire) {
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.program-table td {
+  color: rgb(98, 109, 118);
+  height: 90px;
+  font-size: 18px;
+}
+
+.program-table .horaire {
+  text-align: right;
+  padding-right: 25px;
+}
+
+/* Venue section */
+.section-venue {
+  display: flex;
+  justify-content: space-around;
+}
+
+.venue h4 {
+  color: rgb(62, 106, 108);
+  font-size: 24px;
+  text-decoration: dotted;
+  padding-bottom: 10px;
+}
+
+.venue a {
+  text-decoration: dashed;
+  color: rgb(19, 187, 165);
+  margin-top: 30px;
+}
+
+/* Registration section */
+.inscription {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achat ul {
+  list-style-position: inside;
+}
+
+.inscription h3,
+.inscription h4 {
+  color: rgb(26, 163, 170);
+}
+
+.input label,
+.label {
+  color: rgb(26, 163, 170);
+}
+
+.site {
+  padding-top: 30px;
+}
+
+.quantite {
+  width: 50px;
+}
+
+.button-inscription {
+  background-color: rgb(62, 106, 108);
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.contain-footer {
+  background-color: rgb(34, 63, 83);
+  font-size: 14px;
+  height: 10vh;
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5vh;
+}
+
+.contain-footer ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.footer-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover {
+  color: #f1c40f;
+}
+
+.footer-navigation a:active {
+  background-color: #f1c40f;
+  color: #333;
+}
+
+.contain-footer p {
+  color: rgb(173, 188, 201);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

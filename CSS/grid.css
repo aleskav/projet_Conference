@@ -1,0 +1,120 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+
+
+#grid1 {
+    background-color: red;
+    display: inline-grid; 
+    margin: 20px;
+}
+
+#grid2 {
+    background-color: yellow;
+    display: grid;
+    margin: 20px;
+
+}
+
+#grid3 {
+    background-color: red;
+    display: inline-grid;
+    margin: 20px;
+
+}
+
+#grid4 {
+    background-color: yellow;
+    display: inline-grid;
+    margin: 20px;
+
+}
+
+
+/*definiçao da minha GRID*/
+#grid {
+    display: grid;
+    /* grid-template-columns: 30% 30% 40%; */
+    /* grid-template-columns: 20% auto 300px; */
+    grid-template-columns: 1fr auto 1fr ;
+    /* pour eviter la repetition:*/
+    grid-template-columns: repeat(3, 1fr) ; /*3X 1fr */
+    
+
+    /* grid-template-rows: 20% auto 30%; cada um equivale a cada linha existente */
+    grid-template-rows: 20% 50% 30% ; 
+    grid-template-rows: 1fr 1fr 1fr ; 
+
+    height: 500px;
+    width: 80%;
+    background-color: white;
+    grid-gap: 20px; /*aplica para linha e coluna. O PROBLEMA É QUE QUANDO ADICIONAMOS GAP OCORRE UM TRANSBORDAMENTO (DEBORDEMENT)*/
+    /*nesse caso dá para usar o fr*/
+
+}
+
+/*definiçao da aparencia da minha GRID*/
+#grid div {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+
+}
+
+/*definiçao dos blocos da minha GRID*/
+.um {
+    background-color: blue;
+}
+
+.dois {
+    background-color: yellow;
+
+}
+
+
+.tres {
+    background-color:red; 
+
+}
+.quatro {
+    background-color:   blueviolet; 
+}
+.cinco {
+    background-color:whitesmoke;
+
+
+}
+.seis {
+    background-color: aqua; 
+}
+.sete{
+    background-color:rgb(66, 15, 209);
+
+
+}
+
+.oito{
+    background-color:  maroon;
+
+}
+
+.nove{
+    background-color: rgb(42, 241, 102);
+}
+
+.dez{
+    background-color: coral;
+}
+
+.onze{
+    background-color: blanchedalmond;
+}
+
+.doze{
+    background-color:darkcyan; 
+}

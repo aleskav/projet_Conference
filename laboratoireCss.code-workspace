@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../420-105-GG CRÉATION D'UN SITE WEB CLIENT groupe 08723/Aula 3 CSS/laboratoireCss"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5503,
+		"liveServer.settings.multiRootWorkspaceName": "laboratoiresite"
+	}
+}
